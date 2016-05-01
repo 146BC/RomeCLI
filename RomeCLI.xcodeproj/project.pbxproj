@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A18931751CB0441B00458B69 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18931741CB0441B00458B69 /* main.swift */; };
+		A1C25FF31CC98DA700F46AC4 /* RomeKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1C25FEA1CC98BD500F46AC4 /* RomeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C25FF51CC98DA700F46AC4 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1C25FEB1CC98BD500F46AC4 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C25FF71CC98DA700F46AC4 /* CommandLine.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1C25FEC1CC98BD500F46AC4 /* CommandLine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C25FF91CC98DA700F46AC4 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1C25FED1CC98BD500F46AC4 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1C25FFB1CCBBC5600F46AC4 /* ClientCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C25FFA1CCBBC5600F46AC4 /* ClientCommand.swift */; };
+		A1C260051CD15DC200F46AC4 /* AssetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C260041CD15DC200F46AC4 /* AssetCommand.swift */; };
+		A1C260071CD5155A00F46AC4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C260061CD5155A00F46AC4 /* StringExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A189317D1CB0910900458B69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1C25FF51CC98DA700F46AC4 /* ObjectMapper.framework in CopyFiles */,
+				A1C25FF31CC98DA700F46AC4 /* RomeKit.framework in CopyFiles */,
+				A1C25FF71CC98DA700F46AC4 /* CommandLine.framework in CopyFiles */,
+				A1C25FF91CC98DA700F46AC4 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A18931581CB042F200458B69 /* RomeCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomeCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18931621CB042F200458B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18931741CB0441B00458B69 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A1C25FEA1CC98BD500F46AC4 /* RomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RomeKit.framework; path = Carthage/Build/Mac/RomeKit.framework; sourceTree = SOURCE_ROOT; };
+		A1C25FEB1CC98BD500F46AC4 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		A1C25FEC1CC98BD500F46AC4 /* CommandLine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommandLine.framework; path = Carthage/Build/Mac/CommandLine.framework; sourceTree = SOURCE_ROOT; };
+		A1C25FED1CC98BD500F46AC4 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		A1C25FFA1CCBBC5600F46AC4 /* ClientCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCommand.swift; sourceTree = "<group>"; };
+		A1C260041CD15DC200F46AC4 /* AssetCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetCommand.swift; sourceTree = "<group>"; };
+		A1C260061CD5155A00F46AC4 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A18931551CB042F200458B69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A189314F1CB042F200458B69 = {
+			isa = PBXGroup;
+			children = (
+				A189315A1CB042F200458B69 /* RomeCLI */,
+				A18931591CB042F200458B69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A18931591CB042F200458B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A18931581CB042F200458B69 /* RomeCLI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A189315A1CB042F200458B69 /* RomeCLI */ = {
+			isa = PBXGroup;
+			children = (
+				A18931691CB043B000458B69 /* Frameworks */,
+				A189317A1CB0470A00458B69 /* Utilities */,
+				A18931771CB0445100458B69 /* Commands */,
+				A18931621CB042F200458B69 /* Info.plist */,
+				A18931741CB0441B00458B69 /* main.swift */,
+			);
+			path = RomeCLI;
+			sourceTree = "<group>";
+		};
+		A18931691CB043B000458B69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1C25FEA1CC98BD500F46AC4 /* RomeKit.framework */,
+				A1C25FEB1CC98BD500F46AC4 /* ObjectMapper.framework */,
+				A1C25FEC1CC98BD500F46AC4 /* CommandLine.framework */,
+				A1C25FED1CC98BD500F46AC4 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A18931771CB0445100458B69 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A1C25FFA1CCBBC5600F46AC4 /* ClientCommand.swift */,
+				A1C260041CD15DC200F46AC4 /* AssetCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		A189317A1CB0470A00458B69 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A1C260061CD5155A00F46AC4 /* StringExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A18931571CB042F200458B69 /* RomeCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18931651CB042F200458B69 /* Build configuration list for PBXNativeTarget "RomeCLI" */;
+			buildPhases = (
+				A18931541CB042F200458B69 /* Sources */,
+				A18931551CB042F200458B69 /* Frameworks */,
+				A18931561CB042F200458B69 /* Resources */,
+				A189317D1CB0910900458B69 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RomeCLI;
+			productName = RomeCLI;
+			productReference = A18931581CB042F200458B69 /* RomeCLI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A18931501CB042F200458B69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = 146BC;
+				TargetAttributes = {
+					A18931571CB042F200458B69 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = A18931531CB042F200458B69 /* Build configuration list for PBXProject "RomeCLI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A189314F1CB042F200458B69;
+			productRefGroup = A18931591CB042F200458B69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A18931571CB042F200458B69 /* RomeCLI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A18931561CB042F200458B69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A18931541CB042F200458B69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1C260051CD15DC200F46AC4 /* AssetCommand.swift in Sources */,
+				A1C260071CD5155A00F46AC4 /* StringExtensions.swift in Sources */,
+				A1C25FFB1CCBBC5600F46AC4 /* ClientCommand.swift in Sources */,
+				A18931751CB0441B00458B69 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A18931631CB042F200458B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A18931641CB042F200458B69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = /usr/local/Frameworks/RomeCLI;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A18931661CB042F200458B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RomeCLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OneFourSixBC.RomeCLI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A18931671CB042F200458B69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = RomeCLI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = OneFourSixBC.RomeCLI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A18931531CB042F200458B69 /* Build configuration list for PBXProject "RomeCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18931631CB042F200458B69 /* Debug */,
+				A18931641CB042F200458B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A18931651CB042F200458B69 /* Build configuration list for PBXNativeTarget "RomeCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18931661CB042F200458B69 /* Debug */,
+				A18931671CB042F200458B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A18931501CB042F200458B69 /* Project object */;
+}
