@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15BB3F71CD800A200D98A73 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BB3F61CD800A200D98A73 /* HelpCommand.swift */; };
 		A18931751CB0441B00458B69 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18931741CB0441B00458B69 /* main.swift */; };
 		A1C25FF31CC98DA700F46AC4 /* RomeKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1C25FEA1CC98BD500F46AC4 /* RomeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1C25FF51CC98DA700F46AC4 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1C25FEB1CC98BD500F46AC4 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A15BB3F61CD800A200D98A73 /* HelpCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
 		A18931581CB042F200458B69 /* RomeCLI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RomeCLI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18931621CB042F200458B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A18931741CB0441B00458B69 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				A1C25FFA1CCBBC5600F46AC4 /* ClientCommand.swift */,
 				A1C260041CD15DC200F46AC4 /* AssetCommand.swift */,
+				A15BB3F61CD800A200D98A73 /* HelpCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				A1C260071CD5155A00F46AC4 /* StringExtensions.swift in Sources */,
 				A1C25FFB1CCBBC5600F46AC4 /* ClientCommand.swift in Sources */,
 				A18931751CB0441B00458B69 /* main.swift in Sources */,
+				A15BB3F71CD800A200D98A73 /* HelpCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
