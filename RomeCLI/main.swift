@@ -9,12 +9,13 @@ if let baseUrl = env["ROME_ENDPOINT"], apiKey = env["ROME_KEY"] {
     let bootstrap = RomeKit.Bootstrap.init(baseUrl: baseUrl, apiKey: apiKey)
     bootstrap?.start()
 } else {
-    print("Environment variables ROME_URL & ROME_KEY not set")
+    print("Environment variables ROME_ENDPOINT & ROME_KEY not set")
 }
 
 func startOperation(operation: Operation?, parameters: [String]?) {
     guard let operation = operation else {
-        return
+        cli.printUsage()
+        exit(EX_USAGE)
     }
     
     switch operation {
@@ -86,19 +87,33 @@ enum Operation: String {
     case DeleteAsset    = "delete-asset"
     case GetAsset       = "get-asset"
     case ListAssets     = "list-assets"
-    case UpdateAsset     = "update-asset"
+    case UpdateAsset    = "update-asset"
 }
 
 let cli = CommandLine()
-let operation = EnumOption<Operation>(shortFlag: "o", longFlag: "operation", required: true,
-                               helpMessage: "Operation methods")
-let parameters = MultiStringOption(shortFlag: "p", longFlag: "parameters", required: false,
-                                      helpMessage: "Parameters")
-cli.setOptions(operation, parameters)
+let operation = EnumOption<Operation>(shortFlag: "o",
+                                      longFlag: "operation",
+                                      required: false,
+                                      helpMessage: "Operation methods")
+
+let parameters = MultiStringOption(shortFlag: "p",
+                                   longFlag: "parameters",
+                                   required: false,
+                                   helpMessage: "Parameters")
+
+let help = BoolOption(shortFlag: "h",
+                      longFlag: "help",
+                      helpMessage: "Gives a list of supported operations")
+
+cli.setOptions(operation, parameters, help)
 
 do {
     try cli.parse()
-    startOperation(operation.value, parameters: parameters.value)
+    if (help.value) {
+        HelpCommand().printHelp()
+    } else {
+        startOperation(operation.value, parameters: parameters.value)
+    }
 } catch {
     cli.printUsage(error)
     exit(EX_USAGE)
