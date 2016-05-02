@@ -1,7 +1,7 @@
 TEMPORARY_FOLDER=/tmp/RomeCLI.dst
 BUILD_TOOL=xcodebuild
 
-XCODEFLAGS=-scheme 'RomeCLI' DSTROOT=$(TEMPORARY_FOLDER)
+XCODEFLAGS=DSTROOT=$(TEMPORARY_FOLDER)
 
 ROME_EXECUTABLE=$(TEMPORARY_FOLDER)/Applications/RomeCLI.app/Contents/MacOS/RomeCLI
 FRAMEWORKS_BUNDLE=$(TEMPORARY_FOLDER)/Applications/RomeCLI.app/Contents/Frameworks/
@@ -13,7 +13,7 @@ clean:
 	rm -rf "$(TEMPORARY_FOLDER)"
 	$(BUILD_TOOL) $(XCODEFLAGS) clean
 
-install:
+install: uninstall
 	carthage bootstrap --platform OSX
 	$(BUILD_TOOL) $(XCODEFLAGS) install
 	mkdir -p "$(FRAMEWORKS_FOLDER)/RomeCLI"
