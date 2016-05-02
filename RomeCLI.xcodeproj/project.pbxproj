@@ -303,6 +303,7 @@
 				);
 				INFOPLIST_FILE = RomeCLI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = OneFourSixBC.RomeCLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
