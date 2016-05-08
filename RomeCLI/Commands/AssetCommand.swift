@@ -88,6 +88,8 @@ struct AssetCommand {
                     self.printAsset(asset)
                 }
                 
+                dispatch_group_leave(dispatchGroup)
+                
         })
             
         dispatch_group_wait(dispatchGroup, DISPATCH_TIME_FOREVER)
